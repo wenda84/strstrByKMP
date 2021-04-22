@@ -7,11 +7,11 @@
 
 对外接口在"KMP.h"中提供  
 
-- 如果只是简单的替换strstr函数  
-那么直接使用kmp_strstr接口替换即可
+- 如果只是简单的替换`strstr`函数  
+那么直接使用`kmp_strstr`接口替换即可
 - 如果需要被搜索的字段在程序中是固定的  
-可以使用kmp_strstr_dp接口来获得更好的性能  
-PS:  该使用方式需要自己调用dp_construct、dp_destroy接口维护dp数组的内存  
+可以使用`kmp_strstr_dp`接口来获得更好的性能  
+PS:  该使用方式需要自己调用`dp_construct`、`dp_destroy`接口维护dp数组的内存  
 
 ***
 
